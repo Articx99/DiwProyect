@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*revisar el body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* aplicamos estilos al contenedor padre */
+.contenedor {
+    margin: auto; /*para centrar mi diseño*/
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*los elementos que no cogen, se pongan debajo*/ 
+                    /*y así el header ocupe el 100% */
+                    border: 2px solid black;
+}
+
+/*header es el contenedor padre de nav */
+header {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center; 
+    border: 2px solid black;
+}
+header .menu {
+    display: flex;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+}
+header .menu a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 32px;
+    border-top: 3px solid rgb(218, 98, 0);
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+header .logo img{
+    width: 45%;
+    height: 45%;
+    padding: 0;
+    border: 1px solid black;
+}
+
+/*definimos el responsive para que al cambiar la pantalla de tamaño, nos salgan los elementos bien */
+/*por ejemplo, que el aside en vez de mantenerse vertical, se mueva debajo del main y sea horizontal*/
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad {
+        width: 40%;
+    }
+} 
+
+/*arreglamos el contenido, especialmente el footer, centramos el logo y el menu lo ponemos centrado y debajo del logo */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    header .menu {
+        width: 100%;
+        background: rgba(255,255,255,0.2);
+        text-align: center;
+        padding: 20px;       
+    }
+
+    header .menu a {
+        margin: 0 20px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor {
+        order: 2;
+    }
+
+    footer .redes-sociales {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/*para tamaños pequeños, queremos que desapareza el aside */
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+
+}

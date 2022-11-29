@@ -1,0 +1,189 @@
+/*@font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+    src: local('?'),
+        url("fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*revisar el body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #000 url('images/fondo.jpg');
+    background-size: cover; /*para que la imagen cubra todo el fondo */
+    background-attachment: fixed;
+}
+
+/* aplicamos estilos al contenedor padre */
+.contenedor {
+    margin: auto; /*para centrar mi diseño*/
+    /*margin: 20px;*/
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*los elementos que no cogen, se pongan debajo*/ 
+                    /*y así el header ocupe el 100% */
+}
+
+/*header es el contenedor padre de nav */
+header {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*los elementos del nav se ponen a la derecha*/
+    align-items: center; /*alineamos los elementos del nav con el logotipo */
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background: #fff; /*fondo de color blanco*/
+    padding: 20px;
+    width: 70%;
+}
+
+.main article .thumb {
+    margin-bottom: 20px;
+}
+
+.main article .thumb img { 
+    width: 100%;
+    vertical-align: top;
+}
+
+.main article h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.main article p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+/*aside es el contenedor padre de los contenedores .ad*/
+aside {
+    width: 30%;
+    background: #537dca;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside .ad {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    background: #4264a2;
+    /*margin: 20px 0;*/
+}
+
+/*el footer es el contenedor padre de las clases autor y redes-sociales*/
+footer {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /*para tener los enlaces a la dcha.*/
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: none;
+}
+
+/*definimos el responsive para que al cambiar la pantalla de tamaño, nos salgan los elementos bien */
+/*por ejemplo, que el aside en vez de mantenerse vertical, se mueva debajo del main y sea horizontal*/
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad {
+        width: 40%;
+    }
+} 
+
+/*arreglamos el contenido, especialmente el footer, centramos el logo y el menu lo ponemos centrado y debajo del logo */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    header .menu {
+        width: 100%;
+        background: rgba(255,255,255,0.2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .menu a {
+        margin: 0 20px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor {
+        order: 2;
+    }
+
+    footer .redes-sociales {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/*para tamaños pequeños, queremos que desapareza el aside */
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+
+}

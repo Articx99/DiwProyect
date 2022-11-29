@@ -1,0 +1,22 @@
+body{
+    color: black;
+    font-family: Courier, monospace;
+    font-size: 12pt;
+    line-height: 1.2;
+}
+
+h1{
+   color: #660000; 
+   font-size: 24pt;
+   text-shadow: 1px 1px blue;
+   text-transform: capitalize;
+   line-height: 5px;
+}
+a{
+    font-style: italic;
+    color: grey;
+}
+a:visited {
+    text-decoration: dashed;
+    color: red;   
+}
