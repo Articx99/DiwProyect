@@ -15,46 +15,88 @@ body {
 .contenedor {
     margin: auto; /*para centrar mi diseño*/
     width: 100%;
-    max-width: 1000px;
+    max-width: max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /*los elementos que no cogen, se pongan debajo*/ 
                     /*y así el header ocupe el 100% */
-                    border: 2px solid black;
+    
 }
 
 /*header es el contenedor padre de nav */
 header {
     width: 100%;
-    padding: 50px 0;
-    display: flex;
-    
+    padding: 5px 0;
+    display: flex;    
     flex-direction: row;
-    align-items: center; 
-    border: 2px solid black;
+    align-content: flex-end; 
+    border-bottom: 3px solid rgb(255, 102, 5);
+    position: relative;
 }
-header .menu {
-    display: flex;
+.button{
+    background-color: rgb(255, 102, 51);
+    border: none;
+    width: 250px;
+    color: white;
+    padding: 15px;
     text-align: center;
-    border: 2px solid black;
-    padding: 5px;
+    text-decoration: none;  
+    border-radius: 2px;
+    font-size: 150%;
+    margin: auto;
+    position: absolute;
+    left: 80%;
+    bottom: 50%;
 }
+.loginButton {
+    border-radius: 42px;
+}
+.span{
+    display: block;
+    align-items: center;
+    width:100%;
+    
+    background-color: rgb(76,79,177);
+    color: white;
+    border: solid 2px black;
+}
+.span p{
+    
+    width: 50%;    
+}
+header .menu {   
+    width: 25%;  
+    height: max-content;
+    display: flex;      
+    justify-content: space-between;   
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    
+}
+
 header .menu a {
     color: #000;
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 32px;
-    border-top: 3px solid rgb(218, 98, 0);
+    text-decoration: none; 
+    margin-left: 10%;  
+    font-size: 230%;
+    border-top: 3px solid rgb(255, 102, 5);
 }
 
 header .menu a:hover {
     text-decoration: underline;
 }
+header .logo{
+    width: 60%;
+    height: auto;
+}
 header .logo img{
-    width: 45%;
-    height: 45%;
+   
+    width: 40%;
+    height: 100%;
     padding: 0;
-    border: 1px solid black;
+    margin-left: 10%;
+   
 }
 
 /*definimos el responsive para que al cambiar la pantalla de tamaño, nos salgan los elementos bien */
