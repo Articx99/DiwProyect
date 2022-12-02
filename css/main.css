@@ -33,37 +33,47 @@ header {
     border-bottom: 3px solid rgb(255, 102, 5);
     position: relative;
 }
-.button{
+button{     
     background-color: rgb(255, 102, 51);
-    border: none;
-    width: 250px;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;  
-    border-radius: 2px;
-    font-size: 150%;
-    margin: auto;
+    border: none;  
+    width: 20%;  
+    height: max-content;
+    display: flex;   
+    padding: 18px;       
+      
     position: absolute;
-    left: 80%;
-    bottom: 50%;
+    font-size: 150%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    
 }
 .loginButton {
+    display: flex;
     border-radius: 42px;
+    text-align: center;
+    
+    left: 75%;
+    bottom: 50%;
+    
 }
 .span{
     display: block;
     align-items: center;
     width:100%;
-    
+    text-align: center;
     background-color: rgb(76,79,177);
     color: white;
     border: solid 2px black;
+    align-items: center;
 }
-.span p{
-    
-    width: 50%;    
+.span p a{
+    color: rgb(252, 250, 250);
 }
+.span p a:hover{
+    text-decoration: underline;    
+}
+
 header .menu {   
     width: 25%;  
     height: max-content;
@@ -79,19 +89,15 @@ header .menu a {
     color: #000;
     text-decoration: none; 
     margin-left: 10%;  
-    font-size: 230%;
+    font-size: 28px;
     border-top: 3px solid rgb(255, 102, 5);
 }
 
-header .menu a:hover {
-    text-decoration: underline;
-}
 header .logo{
     width: 60%;
     height: auto;
 }
-header .logo img{
-   
+header .logo img{   
     width: 40%;
     height: 100%;
     padding: 0;
