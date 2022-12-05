@@ -1,0 +1,83 @@
+.registerContent{
+    width: 100%;
+    padding: 5px 0;
+    height: 500px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center; 
+    border-bottom: 3px solid rgb(255, 102, 5);
+    position: relative;    
+    background-color: rgb(242, 250, 251);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  /* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+.container {
+    display: column;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    font-size: 22px;
+  }
+.filaRegister{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    border: none;   
+    align-items: center;  
+}
+
+.elementoRegister{
+    width: 100%;   
+    margin-left: 20px;
+   
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 34px; 
+    padding: 20px;
+    overflow: hidden; 
+}
+.registerButton {
+    display: block;   
+    background-color: rgb(255, 102, 51);
+    border: none;
+    width: 20%;  
+    height: max-content;   
+    padding: 15px;       
+    justify-content: center; 
+    position: absolute;
+    font-size: 120%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    word-spacing: 5px;
+    border-radius: 42px;  
+    left: 75%;
+    bottom: 5%;
+    
+}
+
+@media screen and (max-width: 700px) {
+    #doblar{
+        width: 50%;
+    }    
+}

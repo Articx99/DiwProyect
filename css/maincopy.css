@@ -6,11 +6,10 @@
     box-sizing: border-box;
 }
 
-/*revisar el body */
 body {
     font-family: 'Open Sans', sans-serif;   
 }
-/* aplicamos estilos al contenedor padre */
+
 .contenedor {
     display: flex;
     margin: auto; 

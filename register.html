@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/register.css">
 
         <title>LearnToHack &#8211;</title>
     </head>
@@ -29,41 +30,33 @@
                 
             </header>
             <h1 id="tituloContenido">
-                Últimas <span class="oscureBlue">noticias</span> y <span class="oscureBlue">actividad</span>
+                Crea una nuevo cuenta:
             </h1>
-            <main class="content">               
-                <section class="filas">
-                    <article class="violeta elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
-                    </article>
-                    <article class="naranja elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
-                    </article>
-                    <article class="azul elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
-                    </article>
-                </section>
-            
-                <section class="filas">
-                    <article  class="naranja elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content  </p>
-                    </article  >
-                    <article class="azul elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content </p>
-                    </article>
-                    <article  class="violeta elementos">
-                        <h4>Titulo prueba</h4>
-                        <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
-                    </article>
-                </section>
-                <section class="filas">
-                    <button class="masInfo">Más información</button>
-                </section>
+            <main class="registerContent">               
+                <form action="">
+                    <section class="filaRegister"> 
+                        <article class="elementoRegister">
+                            <h1>Registro</h1>
+                            <p>Por favor, introduce todos los campos.</p>
+                            <hr>   ​
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    ​
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    ​
+                            <label for="psw-repeat"><b>Repite la contraseña</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                            <hr>
+                            <p id="doblar">Por crear una cuenta aceptas a nuestros <a href="#">terminos y privacidad</a>.</p> 
+                            <a href="#"><input type="button" class="registerButton" value="Registate"></a></button>      
+                        </article> 
+                                 
+                    </section>         ​
+                                 
+                    
+                    
+                  </form>
             </main>
 
             <footer>

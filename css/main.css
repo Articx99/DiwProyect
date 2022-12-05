@@ -26,6 +26,12 @@ button a{
     text-align: center;
     
 }
+.loginButton:hover{
+    background-color: rgb(252, 106, 57);
+    -webkit-box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
+    -moz-box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
+    box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
+}
 button:hover{
     background-color: rgb(252, 106, 57);
     -webkit-box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
@@ -58,6 +64,18 @@ button{
     
 }
 .loginButton {
+    display: flex;   
+    background-color: rgb(255, 102, 51);
+    border: none;
+    width: 20%;  
+    height: max-content;   
+    padding: 15px;       
+    justify-content: center; 
+    position: absolute;
+    font-size: 120%;
+    color: white;
+    margin: auto;
+    text-align: center;
     word-spacing: 5px;
     border-radius: 42px;  
     left: 75%;
@@ -65,6 +83,18 @@ button{
     
 }
 .masInfo {
+    display: flex;   
+    background-color: rgb(255, 102, 51);
+    border: none;
+    width: 20%;  
+    height: max-content;   
+    padding: 15px;       
+    justify-content: center; 
+    position: absolute;
+    font-size: 120%;
+    color: white;
+    margin: auto;
+    text-align: center;
     width: 25%;
     height: 10%;
     margin: auto;    
@@ -102,6 +132,11 @@ header .menu {
     
     
 }
+button,input{
+    border: none;
+    background: none;
+
+}
 
 header .menu a {
     color: #000;
@@ -110,9 +145,8 @@ header .menu a {
     font-size: 36px;
     border-top: 3px solid rgb(255, 102, 5);
 }
-header .menu a:hover {
-    color: rgb(255, 102, 5);
-    
+header .menu input:hover {
+    color: rgb(255, 102, 5);   
 }
 
 header .logo{
@@ -137,7 +171,7 @@ header .logo img{
     position: relative;    
     background-color: rgb(242, 250, 251);
 }
-.fila1{
+.filas{
     height: 40%;
     width: 100%;
     display: flex;
@@ -157,6 +191,12 @@ header .logo img{
     border-radius: 34px; 
     padding: 20px;
     overflow: hidden; 
+}
+.elementoRegister{
+    width: 50%;   
+    margin-left: 20px;
+    height: 100%;
+    margin: auto;       
 }
 .violeta{
     background-color: rgb(76, 79, 177);        
@@ -268,6 +308,10 @@ footer .fot p:hover {
         border-bottom: 3px solid rgb(255, 102, 5);
         position: relative;
     }
+    input[type="button"]
+    {
+        font-size: 12px;
+    }
     header .menu {       
         display: flex; 
         width: 25%;  
@@ -306,3 +350,5 @@ footer .fot p:hover {
         font-size: 8px;
     }
 }
+
+
