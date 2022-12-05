@@ -6,10 +6,11 @@
     box-sizing: border-box;
 }
 
+/*revisar el body */
 body {
     font-family: 'Open Sans', sans-serif;   
 }
-
+/* aplicamos estilos al contenedor padre */
 .contenedor {
     display: flex;
     margin: auto; 
@@ -184,80 +185,8 @@ header .logo img{
     color: rgb(0,19,80);
 }
 
-footer {
-    margin: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 5px;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: row;  
-    justify-content: space-between; 
-    flex-wrap: wrap;
-}
-.foot{
-    display: column;
-    flex-direction: row;
-    justify-content:flex-end;
-    font-size: 22px;
-        
     
-}
-footer .fot p {   
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    margin: 5px;
-}
-footer .fot h4 {
-    color: rgb(0, 0, 0);
-    margin: 5px;
-}
 
-footer .fot p:hover {
-    text-decoration: none;
-} 
-.logoText{
-    color:  rgb(255, 102, 51);
-    text-align: center;
-}
-
-.twitterButton{
-    color: rgb(0, 247, 255);    
-    background-color: white;
-    width: 100%;   
-    margin-top: 10px;   
-    border: solid 2px aqua; 
-    border-radius: 34px; 
-    padding: 10px;
-}
-.twitterButton:hover{
-    color: aqua;
-    background-color: white;
-    text-decoration: underline;
-    -webkit-box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
-    -moz-box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
-    box-shadow: 2px 4px 25px 2px rgba(117,117,117,0.76);
-}
-#spanTwitter{
-    margin-left: 10px;
-}
-#autor{
-    color: rgb(153, 153, 153);
-    margin-top: 10px;
-    text-align: center;
-}
-
-@media screen and (max-width: 1100px){
-    .foot{
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .foot{
-        font-size: 14px;
-    }
-}
 @media screen and (max-width: 700px) {
     header {
         width: 100%;
@@ -268,7 +197,8 @@ footer .fot p:hover {
         border-bottom: 3px solid rgb(255, 102, 5);
         position: relative;
     }
-    header .menu {       
+    header .menu {
+        
         display: flex; 
         width: 25%;  
         height: max-content;         
@@ -293,16 +223,5 @@ footer .fot p:hover {
     }
     .masInfo{
         width: 36%;
-    }
-    footer .autor {
-        order: 2;
-    }
-    .foot{
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 600px){
-    .foot{
-        font-size: 8px;
     }
 }
