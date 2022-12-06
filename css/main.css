@@ -5,9 +5,13 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Zeitung Micro Pro";
+    src: url("fonts/zeitnug-micro-pro.otf") format("opentype"); 
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;   
+    font-family: "Zeitung Micro Pro";   
 }
 
 .contenedor {
@@ -79,8 +83,7 @@ button{
     word-spacing: 5px;
     border-radius: 42px;  
     left: 75%;
-    bottom: 50%;
-    
+    bottom: 50%;   
 }
 .masInfo {
     display: flex;   
@@ -95,15 +98,11 @@ button{
     color: white;
     margin: auto;
     text-align: center;
-    width: 25%;
-    height: 10%;
-    margin: auto;    
     border-radius: 34px; 
-    padding: 15px;
- 
     
 }
 .span{
+    font-family: sans-serif;
     display: block;
     align-items: center;
     width:100%;
@@ -168,7 +167,7 @@ header .logo img{
     flex-direction: column;
     justify-content: center; 
     border-bottom: 3px solid rgb(255, 102, 5);
-    position: relative;    
+    
     background-color: rgb(242, 250, 251);
 }
 .filas{
@@ -181,8 +180,18 @@ header .logo img{
     border: none;   
     align-items: center;  
 }
-
+.filasPrecios{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;   
+    
+      
+}
 .elementos{
+    font-size: large;
     width: 30%;   
     margin-left: 20px;
     height: 100%;
@@ -191,6 +200,19 @@ header .logo img{
     border-radius: 34px; 
     padding: 20px;
     overflow: hidden; 
+}
+.elementoPrecios{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 20%;       
+    height: 100%;
+    margin: 20px;
+    margin-top: 5px;
+    border-radius: 30px; 
+    padding: 20px;
+    overflow: hidden; 
+    
 }
 .elementoRegister{
     width: 50%;   
@@ -207,6 +229,10 @@ header .logo img{
 .azul{
     background-color: rgb(26, 171, 192);
 }
+.yellow{
+    font-family: "Zeitung Mono Pro";
+    color: rgb(238, 255, 0);
+}
 .elementos p{
     margin: 5px;
     text-justify: auto;
@@ -215,6 +241,7 @@ header .logo img{
 }
 
 #tituloContenido{
+    font-family: "Neue Haas Unica";
     width: 100%;
     margin: 15px;
     text-align: center;
@@ -243,20 +270,21 @@ footer {
         
     
 }
-footer .fot p {   
+footer .foot p {   
     color: rgb(0, 0, 0);
-    text-decoration: underline;
-    margin: 5px;
+    text-decoration: none;
+    margin: 1px;
 }
-footer .fot h4 {
+footer .foot p:hover {   
+    text-decoration: underline;
+}
+footer .foot h4 {
     color: rgb(0, 0, 0);
-    margin: 5px;
+    margin: 1px;
 }
 
-footer .fot p:hover {
-    text-decoration: none;
-} 
 .logoText{
+    font-family: "Neue Haas Unica";
     color:  rgb(255, 102, 51);
     text-align: center;
 }
@@ -286,7 +314,54 @@ footer .fot p:hover {
     margin-top: 10px;
     text-align: center;
 }
+.pPreciosFree{
+    padding: 2px;
+    text-indent: 10px;
+    margin: 10px;
+    
+}
+.pPreciosPremium{
+    padding: 2px;
+    text-indent: 10px;
+    margin: 10px;
 
+}
+.pPreciosPremiumPlus{
+    padding: 2px;
+    text-indent: 10px;
+    margin: 10px;
+
+}
+
+.pPreciosFree p{
+    line-height : 35px;
+}
+.pPreciosPremium p{
+   
+    line-height: 30px;
+}
+.pPreciosPremiumPlus p{
+    line-height: 30px;
+}
+.barraMes{
+    font-size: 16px;
+}
+
+.purchase {   
+    background-color: rgb(94, 94, 94);
+    border: none;  
+    height: max-content;   
+    padding: 15px;
+    border-radius: 12px;        
+    font-size: 120%;
+    color: white;
+    text-align: center;
+    width: 15%;   
+}
+.purchase:hover{
+    background-color: rgb(43, 43, 43);
+
+}
 @media screen and (max-width: 1100px){
     .foot{
         font-size: 18px;
@@ -342,12 +417,12 @@ footer .fot p:hover {
         order: 2;
     }
     .foot{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 600px){
     .foot{
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 

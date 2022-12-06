@@ -45,7 +45,6 @@ hr {
     border: none;   
     align-items: center;  
 }
-
 .elementoRegister{
     width: 100%;   
     margin-left: 20px;
@@ -72,8 +71,25 @@ hr {
     word-spacing: 5px;
     border-radius: 42px;  
     left: 75%;
-    bottom: 5%;
-    
+    bottom: 2%;   
+}
+.loginFormButton {
+    display: block;   
+    background-color: rgb(255, 102, 51);
+    border: none;
+    width: 20%;  
+    height: max-content;   
+    padding: 15px;       
+    justify-content: center; 
+    position: absolute;
+    font-size: 120%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    word-spacing: 5px;
+    border-radius: 42px;  
+    left: 75%;
+    bottom: 5%;   
 }
 
 @media screen and (max-width: 700px) {
